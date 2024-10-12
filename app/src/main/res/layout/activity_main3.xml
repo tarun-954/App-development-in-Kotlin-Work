@@ -11,25 +11,71 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="414dp"
-        android:layout_height="327dp"
+        android:layout_width="wrap_content"
+        android:layout_height="270dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/backShopingImage" />
+        app:srcCompat="@drawable/shoppingback"
+        android:layout_marginTop="50sp"/>
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="189dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="203dp"
+        android:layout_height="103dp"
+        android:fontFamily="@font/qwitchergrypenregular"
+        android:padding="0sp"
+
         android:text="@string/shopping"
-        android:textColor="#eeeee4"
-        android:textSize="40dp"
-        android:fontFamily=""
+
         android:textAlignment="center"
+        android:textColor="#eeeee4"
+        android:textSize="90sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="@string/the_store_of_your_dreams_buy_latest_cloths_here"
+android:textAlignment="center"
+android:textSize="16sp"
+        android:textColor="#eeeee4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="318dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="#52247E"
+        android:fontFamily="sans-serif-light"
+
+        android:text="@string/start_shopping"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="413dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/by_clicking_on_start_you_agree_to_all_the_terms_and_conditions"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
