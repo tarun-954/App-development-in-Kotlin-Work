@@ -9,6 +9,8 @@
     import android.widget.Button
     import android.content.Intent
     import android.net.Uri
+    import android.widget.Toast
+    import com.google.android.material.snackbar.Snackbar
 
     class MainActivity2 : AppCompatActivity() {
         @SuppressLint("MissingInflatedId")
@@ -66,6 +68,19 @@ val sendsmsbutton=findViewById<Button>(R.id.button6)
             sendsmsbutton.setOnClickListener{
                 val shareIntent=Intent(Intent.ACTION_SEND)
 //                shareIntent
+            }
+
+
+            val testToast=findViewById<Button>(R.id.toastTest)
+            testToast.setOnClickListener{ view ->
+                val time=10;
+
+                var toast_time=Toast.makeText(this, "Oops You clicked a toast button", Toast.LENGTH_LONG).show();
+
+//               H.W
+//how to set timer in toast
+
+
             }
 
 
