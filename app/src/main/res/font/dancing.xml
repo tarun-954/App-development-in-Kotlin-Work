@@ -23,4 +23,15 @@
 
         android:fontWeight="400"
         android:font="@font/intersimple" />
+    <font
+        android:fontStyle="normal"
+
+        android:fontWeight="400"
+        android:font="@font/loralnew" />
+    <font
+        android:fontStyle="normal"
+
+        android:fontWeight="400"
+        android:font="@font/loralitalic" />
+
 </font-family>

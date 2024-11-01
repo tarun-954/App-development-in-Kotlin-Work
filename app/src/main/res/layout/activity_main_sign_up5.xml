@@ -25,9 +25,9 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="240dp"
-        android:layout_height="82dp"
-        android:layout_marginTop="-15dp"
+        android:layout_width="204dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="4dp"
 
         android:fontFamily="@font/qwitchergrypenregular"
 
@@ -39,14 +39,16 @@
         android:textSize="80sp"
         app:flow_verticalAlign="top"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Username Input Field with Rounded Corners -->
+
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="239dp"
-        android:layout_height="82dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
 
         android:fontFamily="@font/qwitchergrypenregular"
@@ -58,72 +60,85 @@
         android:textColor="#eeeee4"
         android:textSize="80sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="230dp"
-        android:layout_height="195dp"
-        android:layout_marginTop="296dp"
+        android:layout_width="181dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="308dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/circleView"
         app:srcCompat="@drawable/ring" />
-
-    <!-- Username Input Field with Rounded Corners -->
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/loralnew"
-        android:text="@string/login"
+        android:text="Sign Up"
         android:textColor="#420505"
 
-        android:textSize="35sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/circleView" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="186dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/intersimple"
-        android:text="Email address"
+        android:text="Full name"
         android:textColor="#420505"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintHorizontal_bias="0.382"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="159dp"
+        android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/intersimple"
-        android:text="Password"
+        android:text="Email address"
         android:textColor="#420505"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintHorizontal_bias="0.351"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/usernameInput" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/intersimple"
+        android:text="Create Password"
+        android:textColor="#420505"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameInput2" />
 
     <EditText
         android:id="@+id/usernameInput"
         android:layout_width="257dp"
         android:layout_height="45dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="1dp"
         android:background="@drawable/usernamebox"
-        android:hint="Enter your email"
+        android:hint="Enter your name"
 
         android:paddingStart="20sp"
         android:textColor="@color/white"
@@ -137,28 +152,46 @@
         android:id="@+id/usernameInput2"
         android:layout_width="257dp"
         android:layout_height="45dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="1dp"
         android:background="@drawable/usernamebox"
-        android:hint="Enter your password"
+        android:hint="Enter your email"
         android:paddingStart="20dp"
 
         android:textColor="@color/white"
         android:textColorHint="#999999"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/usernameInput3"
+        android:layout_width="267dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/usernamebox"
+        android:hint="Create your password"
+        android:paddingStart="20dp"
+
+        android:textColor="@color/white"
+        android:textColorHint="#999999"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <Button
         android:id="@+id/start_to_signup"
         android:layout_width="300dp"
         android:layout_height="57dp"
 
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="130dp"
         android:backgroundTint="#A06B19"
         android:fontFamily="@font/intersimple"
         android:padding="0sp"
-        android:text="Login"
+        android:text="Sign Up"
         android:textAlignment="center"
 
         android:textColor="#ffffff"
@@ -166,7 +199,7 @@
 
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.598"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/usernameInput2" />
 
@@ -174,32 +207,36 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="@string/don_t_have_a_account"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="40dp"
+        android:text="Already have a accound?"
         android:textColor="@color/black"
         android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintHorizontal_bias="0.374"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/start_to_signup" />
+        app:layout_constraintTop_toBottomOf="@+id/start_to_signup"
+        app:layout_constraintVertical_bias="0.0"  />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginBottom="40dp"
         android:clickable="true"
+        android:layout_marginTop="5dp"
         android:focusable="true"
-        android:text="Sign Up"
-
-
-        android:textColor="#420505"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Sign in"
+        android:textColor="@color/black"
         android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/start_to_signup" />
+        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_to_signup"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

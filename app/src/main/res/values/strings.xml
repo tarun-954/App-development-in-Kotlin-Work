@@ -6,4 +6,6 @@
     <string name="the_store_of_your_dreams_buy_latest_cloths_here">The store of your dreams.Buy latest cloths here.</string>
     <string name="start_shopping">Start Shopping</string>
     <string name="by_clicking_on_start_you_agree_to_all_the_terms_and_conditions">By clicking on start you agree to all the terms and conditions</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_a_account">Don\'t have a account?</string>
 </resources>
