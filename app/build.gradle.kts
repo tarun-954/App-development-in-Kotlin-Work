@@ -7,6 +7,7 @@ android {
     namespace = "com.example.applocalize"
     compileSdk = 34
 
+
     defaultConfig {
         applicationId = "com.example.applocalize"
         minSdk = 21
@@ -33,7 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
 }
+
 
 dependencies {
 
@@ -42,7 +45,10 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.recyclerview)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
+

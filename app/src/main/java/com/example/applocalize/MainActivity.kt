@@ -8,6 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import android.util.Log
 import android.view.View
+import androidx.core.content.ContextCompat;
+import android.content.pm.PackageManager
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,6 +32,12 @@ class MainActivity : AppCompatActivity() {
             snackbar.setBackgroundTint(Color.BLUE);
             snackbar.show()
 
+
+
         }
+        private val permissions= arrayOf(
+    Manifest.permission.CAMERA;
+            Manifest.permission.
+        )
     }
 }

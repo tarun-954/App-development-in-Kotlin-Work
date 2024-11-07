@@ -34,4 +34,10 @@
         android:fontWeight="400"
         android:font="@font/loralitalic" />
 
+    <font
+        android:fontStyle="normal"
+
+        android:fontWeight="400"
+        android:font="@font/poppinseegular" />
+
 </font-family>

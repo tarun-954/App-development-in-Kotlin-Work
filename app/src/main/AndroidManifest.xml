@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,11 +22,31 @@
         android:theme="@style/Theme.Applocalize"
         tools:targetApi="31">
         <activity
-            android:name=".HomeActivity1"
-            android:exported="false" />
+            android:name=".ActivityCart"
+            android:exported="true" />
         <activity
-            android:name=".JewelryCategoryAdapter"
-            android:exported="false" />
+            android:name=".ActivityEarring"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ActivityBracelet"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityGemstone"
+            android:exported="true" />
+        <activity
+            android:name=".ActivitySilverJewelry"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityDiamond"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityNeckless"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity1"
+            android:exported="true" />
         <activity
             android:name=".MainActivitySignUp5"
             android:exported="true" />
@@ -32,6 +61,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
         </activity>
         <activity
             android:name=".MainActivity2"

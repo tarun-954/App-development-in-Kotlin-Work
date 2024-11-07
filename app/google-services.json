@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "784817732217",
+    "project_id": "applocalize-116b3",
+    "storage_bucket": "applocalize-116b3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784817732217:android:8bc76e16d8f8d5fbe272a8",
+        "android_client_info": {
+          "package_name": "com.example.applocalize"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_sk7dIHGTXeNdLGFsvfmmIgQE128XrO0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
