@@ -35,9 +35,9 @@ class MainActivity : AppCompatActivity() {
 
 
         }
-        private val permissions= arrayOf(
-    Manifest.permission.CAMERA;
-            Manifest.permission.
-        )
+//        private val permissions= arrayOf(
+//    Manifest.permission.CAMERA;
+//            Manifest.permission.
+//        )
     }
 }
