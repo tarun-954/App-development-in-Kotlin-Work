@@ -10,6 +10,8 @@ import android.util.Log
 import android.view.View
 import androidx.core.content.ContextCompat;
 import android.content.pm.PackageManager
+import android.os.PersistableBundle
+import android.view.MenuItem
 
 
 class MainActivity : AppCompatActivity() {
@@ -31,6 +33,10 @@ class MainActivity : AppCompatActivity() {
             }
             snackbar.setBackgroundTint(Color.BLUE);
             snackbar.show()
+//
+//
+        //
+
 
 
 
