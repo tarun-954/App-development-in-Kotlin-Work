@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.PopupMenu
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -24,25 +25,51 @@ class MainActivityPractice5 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        showAlert();
+    }
+
+    private fun showAlert() {
+       val builder=AlertDialog.Builder(this)
+        builder.setTitle("This is an Alert Box");
+        builder.setMessage("Would you like to continue or not? ");
+        builder.setPositiveButton("Ok"){dialog, _ ->
+            dialog.dismiss();
+        }
+
+        builder.setNegativeButton("Cancel"){dialog, _ ->
+            dialog.dismiss();
+        }
+        val alertDialog=builder.create()
+        alertDialog.show();
+    }
+
+
+
+
+
+
+
+}
+
 //        val btn=findViewById<Button>(R.id.button10);
 //        btn.setOnClickListener(){view->
 //            showPopupMenu(view)
 
+//
+//         val textView=findViewById<TextView>(R.id.textview)
+//        val imageView=findViewById<ImageView>(R.id.imageView)
+//        registerForContextMenu(imageView)
+//        }
+//
+//    }
 
-         val textView=findViewById<TextView>(R.id.textview)
-        val imageView=findViewById<ImageView>(R.id.imageView)
-        registerForContextMenu(imageView)
-        }
-
-    }
-
-fun onCreateContextMenu(menu: ContextMenu, v: View, menuInfo: ContextMenu.ContextMenuInfo?) {
-    onCreateContextMenu(menu, v, menuInfo)
+//fun onCreateContextMenu(menu: ContextMenu, v: View, menuInfo: ContextMenu.ContextMenuInfo?) {
+//    onCreateContextMenu(menu, v, menuInfo)
 
     // Inflate the context menu using menuInflater
-    val inflater: MenuInflater = menuInflater
-    inflater.inflate(R.menu.contextmenu, menu) // Inflate your context menu XML
-}
+//    val inflater: MenuInflater = menuInflater
+//    inflater.inflate(R.menu.contextmenu, menu) // Inflate your context menu XML
+
 
 
 
