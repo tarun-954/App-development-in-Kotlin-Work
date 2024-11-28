@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    design an activity using relative layout where provide the approprete component to read the name and mobile-->
+<!--    // from the user  provide a call button when presed open the dialer to dial the entered number-->
+<!--    // using the implecit intent and show the name in toast calling xyz-->
+
+
+
+
+
+<!--design an activity with option profile and setting as icon in the action bar -->
+<!--in profile provide the option to change theme and change password swithch the background
+color between  dark and when when change them is clicked-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExamPractice5"
+    >
+
+    <EditText
+        android:id="@+id/nameID"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="252dp"
+        android:hint="Enter your name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/phoneID"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="312dp"
+        android:hint="Enter your phone "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/senddata"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="108dp"
+        android:text="Dial number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneID">
+
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

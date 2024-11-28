@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">
+    applocalize
+</string>
+
+    <string name="text">नमस्कार, मेरा नाम तरूण चौधरी है
+
+</string>
+    <string name="change">परिवर्तन
+
+    </string>
+</resources>

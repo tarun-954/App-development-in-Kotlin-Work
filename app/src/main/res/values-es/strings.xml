@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">
+    applocalize
+</string>
+    <string name="text">Hola mi nombre es tarun choudhary
+</string>
+    <string name="change">Cambiar
+    </string>
+</resources>

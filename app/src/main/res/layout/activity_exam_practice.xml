@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- simple layouts list view and spinnner basic practice-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ExamPractice">
+
+
+    <LinearLayout
+        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Tarun choudhary"
+            android:textAlignment="center"
+android:gravity="center"
+
+            android:textSize="30dp"
+
+            >
+
+        </TextView>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        >
+
+        <Spinner
+            android:id="@+id/Spinner"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="52dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+
+
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        </Spinner>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    >
+    <ListView
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:id="@+id/listviewID">
+
+    </ListView>
+
+</RelativeLayout>
+
+
+
+</LinearLayout>

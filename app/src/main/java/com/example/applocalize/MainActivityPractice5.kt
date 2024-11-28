@@ -1,9 +1,12 @@
 package com.example.applocalize
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.ContextMenu
+import android.view.LayoutInflater
 import android.view.MenuInflater
 import android.view.View
+import android.view.View.OnClickListener
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.PopupMenu
@@ -26,7 +29,39 @@ class MainActivityPractice5 : AppCompatActivity() {
             insets
         }
         showAlert();
+        showCustomAlert();
     }
+
+    @SuppressLint("MissingInflatedId")
+    private fun showCustomAlert() {
+        val dialogView=LayoutInflater.from(this).inflate(R.layout.activity_main_practice5,null)
+        val l1=LayoutInflater.from(this).inflate(R.layout.constom_alert,null)
+
+        val dialogTitle=dialogView.findViewById<TextView>(R.id.alertTitle)
+        val dialogmessage=dialogView.findViewById<TextView>(R.id.textView13)
+        val btnok=dialogView.findViewById<Button>(R.id.button8);
+        val btnno=dialogView.findViewById<Button>(R.id.button9)
+
+        val dialog=AlertDialog.Builder(this)
+            .setView(dialogView)
+            .setCancelable(false)
+            .create()
+        btnok.setOnClickListener{
+            dialog.dismiss()
+        }
+        btnno.setOnClickListener{
+            finish()
+        }
+        dialog.show()
+
+
+    }
+
+
+
+
+
+
 
     private fun showAlert() {
        val builder=AlertDialog.Builder(this)
@@ -42,6 +77,12 @@ class MainActivityPractice5 : AppCompatActivity() {
         val alertDialog=builder.create()
         alertDialog.show();
     }
+
+//    val alertbutton=findViewById<Button>(R.id.button7)
+//    private fun OnClickListener{
+//        alertbutton.showAlert()
+        
+//    }
 
 
 
