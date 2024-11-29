@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:title="Profile"
+    android:icon="@android:drawable/ic_menu_myplaces"
+    android:id="@+id/profile"
+    app:showAsAction="always">
+
+    <menu
+        >
+        <item android:title="Dark"
+            app:showAsAction="never"
+            android:id="@+id/dark">
+            Setting
+        </item>
+        <item android:title="light"
+            app:showAsAction="never"
+            android:id="@+id/light">
+            Setting
+        </item>
+    </menu>
+</item>
+    <item android:title="Setting"
+        app:showAsAction="never"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:id="@+id/setting">
+        Setting
+    </item>
+</menu>
