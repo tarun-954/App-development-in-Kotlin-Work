@@ -40,7 +40,7 @@ class ExamPractice5 : AppCompatActivity() {
         }
         else{
 
-            Toast.makeText(this@ExamPractice5,"Calling $name",Toast.LENGTH_LONG).show()
+            Toast.makeText(this@ExamPractice5,"Calling $sname",Toast.LENGTH_LONG).show()
 
 
             var intent = Intent(Intent.ACTION_DIAL).apply {
@@ -51,6 +51,7 @@ class ExamPractice5 : AppCompatActivity() {
 
         }
         }
+
 
 
     }

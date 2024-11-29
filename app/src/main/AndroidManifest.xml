@@ -22,14 +22,27 @@
         android:theme="@style/Theme.Applocalize"
         tools:targetApi="31">
         <activity
-            android:name=".ExamPractice5"
-
+            android:name=".ExamPractice8"
             android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity
+            android:name=".ExamPractice7"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ExamPractice6"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ExamPractice5"
+            android:exported="true" />
         <activity
             android:name=".ExamPractice4"
             android:exported="true" />
@@ -38,9 +51,7 @@
             android:exported="true" />
         <activity
             android:name=".ExamPractice2"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".ExamPractice"
             android:exported="true" />
